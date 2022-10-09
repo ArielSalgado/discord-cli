@@ -24,6 +24,7 @@ slimbot.on('message', (message) => {
 slimbot.startPolling();
 
 module.exports = {
+	slimbot,
 	name: 'telegramMessage',
 	async execute(client) {},
 };
