@@ -1,4 +1,4 @@
-# Discord-CLI v1.0.1
+# Discord-CLI v1.0.2
 
 This is a discord bot that allows to use the Github, Notion and Telegram APIs.  
 At the moment the bot can:
@@ -12,6 +12,11 @@ At the moment the bot can:
 - Assign an user to an issue.
 - Create an issue.
 - Change an issue's state.
+
+#### Telegram
+
+- Recieve messages from Telegram
+- Send messages to Telegram
 
 #
 
@@ -30,6 +35,8 @@ Then install the dependencies.
   $ pnpm i
 ```
 
+To use the Telegram you need to create a webhook on your server: https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
+
 #
 
 ## Usage/Examples
@@ -45,17 +52,31 @@ The .env file needs the following variables:
   Bot's ID in the server.
 - DISCORD_GUILD:  
   Server's ID where the bot is.
+- DISCORD_WEBHOOK:  
+  Url of the server integrated webhook.
 - GITHUB_TOKEN:  
   Github personal access token to repositories.
+- TELEGRAM_TOKEN:  
+  Telegram bot token.
+- TELEGRAM_CHAT_ID:  
+  Chat ID to private message.
 
 Example
 
 ```bash
+#Discord Tokens
 DISCORD_TOKEN=...
 DISCORD_OWNER=...
 DISCORD_BOT=...
 DISCORD_GUILD=...
+DISCORD_WEBHOOK=...
+
+#Github Tokens
 GITHUB_TOKEN=...
+
+#Telegram Tokens
+TELEGRAM_TOKEN=...
+TELEGRAM_CHAT_ID=...
 ```
 
 Once the .env file is created run the app using:
