@@ -1,4 +1,4 @@
-# Discord-CLI v1.0.0
+# Discord-CLI v1.0.1
 
 This is a discord bot that allows to use the Github, Notion and Telegram APIs.  
 At the moment the bot can:
@@ -6,6 +6,14 @@ At the moment the bot can:
 #### Tools:
 
 - Get your latency
+
+#### Github
+
+- Assign an user to an issue.
+- Create an issue.
+- Change an issue's state.
+
+#
 
 ## Installation
 
@@ -22,6 +30,8 @@ Then install the dependencies.
   $ pnpm i
 ```
 
+#
+
 ## Usage/Examples
 
 Once installed you must set the environmental varibles by creating a .env file on the root of the project.
@@ -35,6 +45,8 @@ The .env file needs the following variables:
   Bot's ID in the server.
 - DISCORD_GUILD:  
   Server's ID where the bot is.
+- GITHUB_TOKEN:  
+  Github personal access token to repositories.
 
 Example
 
@@ -43,6 +55,7 @@ DISCORD_TOKEN=...
 DISCORD_OWNER=...
 DISCORD_BOT=...
 DISCORD_GUILD=...
+GITHUB_TOKEN=...
 ```
 
 Once the .env file is created run the app using:

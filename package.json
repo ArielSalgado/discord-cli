@@ -1,6 +1,6 @@
 {
 	"name": "discord-cli",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Discord bot for Consorcio Progresa",
 	"main": "src/main.js",
 	"scripts": {
