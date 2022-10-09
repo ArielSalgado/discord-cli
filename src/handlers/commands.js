@@ -10,7 +10,7 @@ module.exports = async (client) => {
 	readdirSync('./src/commands').forEach((category) => {
 		const commands = getFiles(`./src/commands/${category}`, '.js');
 
-		console.log('\nLoading commands...');
+		console.log(`\nLoading ${category} commands...`);
 		commands.forEach((f, i) => {
 			const command = require(`../commands/${category}/${f}`);
 			client.commands.set(command.data.name, command);
