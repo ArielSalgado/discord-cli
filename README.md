@@ -1,4 +1,4 @@
-# Discord-CLI v1.0.2
+# Discord-CLI v1.0.3
 
 This is a discord bot that allows to use the Github, Notion and Telegram APIs.  
 At the moment the bot can:
@@ -6,6 +6,7 @@ At the moment the bot can:
 #### Tools:
 
 - Get your latency
+- Add a reactor for general purposes
 
 #### Github
 
